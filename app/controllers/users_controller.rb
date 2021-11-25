@@ -3,7 +3,6 @@ class UsersController < ApplicationController
   def index
     render plain: User.all.map{ |user| user.to_p}.join("\n")
   end
-
   def show
     user=User.find(params[:id])
     render plain: user.to_p
@@ -18,15 +17,9 @@ class UsersController < ApplicationController
   end
 
   def login
-    email= params[:email]
+    email = params[:email]
     password = params[:password]
-    user=User.find_by(email: email)
-    puts user.to_p
-   if user && user.password == password
-      response_text ="True"
-    else
-      response_text = "False"
-   end
-    render plain: response_text
+    user = User.find_by(email: email, password: password)
+    render plain: user.present?
   end
 end
