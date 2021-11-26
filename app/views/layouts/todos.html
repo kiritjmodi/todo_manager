@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Our Todo Managment App</title>
+  <link rel="stylesheet" type="text/css" href="todo-app.css">
+</head>
+
+<body>
+  <main class="TodoPageMain">
+    <article>
+      <h1 class="TodoPage-title">My Todo List</h1>
+      <section class="AddTodo">
+        <input class="AddTodo-text" type="text" placeholder="What's next?">
+        <input class="AddTodo-date" type="date">
+        <input class="AddTodo-button" type="button" value="Add">
+      </section>
+      <section class="TodoSection">
+        <div class="TodoSectionTitle">
+          <label class="TodoItem-container">
+            <p class="TodoSectionTitle-text">Due Today</p>
+            <p class="TodoSectionTitle-remainingCount">0/4</p>
+          </label>
+        </div>
+        <ul>
+          <li class="TodoItem">
+            <label class="TodoItem-container">
+              <input class="TodoItem-checkbox" type="checkbox">
+              Submit SaaS 201 Project
+              <p class="TodoItem-overdueLabel"> Overdue></p>
+            </label>
+          </li>
+        </ul>
+        <ul>
+          <li class="TodoItem">
+            <label class="TodoItem-container">
+              <input class="TodoItem-checkbox" type="checkbox">
+              Call accountant
+              <a class="TodoItem-delete" href="javascript:void(0)"></a>
+            </label>
+          </li>
+        </ul>
+      </section>
+      <section class="TodoSection">
+        <div class="TodoSectionTitle">
+          <label class="TodoItem-container">
+            <p class="TodoSectionTitle-text">Due Tomorrow</p>
+            <p class="TodoSectionTitle-remainingCount">0/3</p>
+          </label>
+        </div>
+        <ul>
+          <li class="TodoItem">
+            <label class="TodoItem-container">
+              <input class="TodoItem-checkbox" type="checkbox">
+              Refill groceries
+            </label>
+          </li>
+        </ul>
+      </section>
+      <section class="TodoSection">
+        <div class="TodoSectionTitle">
+          <label class="TodoItem-container">
+            <p class="TodoSectionTitle-text">Remaining</p>
+            <p class="TodoSectionTitle-remainingCount">0/3</p>
+          </label>
+        </div>
+        <ul>
+          <li class="TodoItem">
+            <label class="TodoItem-container">
+              <input class="TodoItem-checkbox" type="checkbox">
+              Type something
+              <p class="TodoSectionTitle-remainingCount"> Jan 21</p>
+            </label>
+          </li>
+        </ul>
+        <ul>
+          <li class="TodoItem">
+            <label class="TodoItem-container">
+              <input class="TodoItem-checkbox" type="checkbox">
+              Type something
+              <p class="TodoSectionTitle-remainingCount"> Jan 22</p>
+            </label>
+          </li>
+        </ul>
+        <ul>
+          <li class="TodoItem">
+            <label class="TodoItem-container">
+              <input class="TodoItem-checkbox" type="checkbox">
+              Type something
+              <p class="TodoSectionTitle-remainingCount"> Jan 23</p>
+            </label>
+          </li>
+        </ul>
+      </section>
+    </article>
+  </main>
+</body>
+
+</html>
