@@ -1,12 +1,12 @@
         <section class="TodoSection">
           <div class="TodoSectionTitle">
             <p class="TodoSectionTitle-text"><%=section_title %></p>
-            <p class="TodoSectionTitle-remainingCount"><%=todos.completed.count%>/<%=todos.count%></p>
+            <p class="TodoSectionTitle-remainingCount"><%=todos.completed.count%> /<%=todos.count%></p>
           </div>
           <ul>
           <% todos.each do |todo| %>
           <li class="TodoItem TodoItem-container">
-              <input class="TodoItem-checkbox" type="checkbox" <%=todos.completed ? "checked" :""%> />
+              <input class="TodoItem-checkbox" type="checkbox" [checked]= "TodoItem-completedText" <%=todo.completed ? "checked" :""%> />
               <p class='<%= todo.completed ? "TodoItem-completedText" :"" %>'>
               <%=todo.todo_text%>
               </p>
